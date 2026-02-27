@@ -1,0 +1,136 @@
+:root {
+	/* ---- Spacing ---- */
+	--space-none: 0;
+	--space-xxs: 2px;
+	--space-xs: 4px;
+	--space-s: 8px;
+	--space-m: 16px;
+	--space-l: 24px;
+	--space-xl: 32px;
+	--space-xxl: 48px;
+	--space-xxxl: 64px;
+
+	/* ---- Typography ---- */
+	--font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+	--font-mono: 'Fira Code', 'Courier New', monospace;
+
+	--text-xxs: 0.625rem;   /* 10px */
+	--text-xs: 0.75rem;     /* 12px */
+	--text-s: 0.875rem;     /* 14px */
+	--text-m: 1rem;         /* 16px */
+	--text-l: 1.125rem;     /* 18px */
+	--text-xl: 1.25rem;     /* 20px */
+	--text-xxl: 1.5rem;     /* 24px */
+	--text-xxxl: 1.875rem;  /* 30px */
+	--text-xxxxl: 2.25rem;  /* 36px */
+
+	--font-normal: 400;
+	--font-medium: 500;
+	--font-semibold: 600;
+	--font-bold: 700;
+
+	--leading-tight: 1.25;
+	--leading-normal: 1.5;
+	--leading-loose: 1.75;
+
+	/* ---- Radii ---- */
+	--radius-s: 8px;
+	--radius-m: 16px;
+	--radius-l: 32px;
+	--radius-xl: 64px;
+	--radius-full: 9999px;
+
+	/* ---- Shadows ---- */
+	--shadow-s: 0 1px 2px rgba(0, 0, 0, 0.05);
+	--shadow-m: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--shadow-l: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+	/* ---- Breakpoints (for reference in JS) ---- */
+	--breakpoint-sm: 640px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 1024px;
+	--breakpoint-xl: 1280px;
+
+	/* ---- Transitions ---- */
+	--transition-fast: 150ms ease;
+	--transition-normal: 250ms ease;
+	--transition-slow: 400ms ease;
+
+	/* ---- Container sizes ---- */
+	--container-sm: 640px;
+	--container-md: 768px;
+	--container-lg: 1024px;
+	--container-xl: 1280px;
+}
+
+:root {
+	/* ---- Raw Palette (never used directly in components) ---- */
+		/* Greens */
+		--palette-green-50: #e4eee4;
+		--palette-green-100: #C1D7C1;
+		--palette-green-200: #B5CFB5;
+		--palette-green-400: #A9C7A9;
+		--palette-green-500: #90B690;
+		--palette-green-600: #72A273;
+		--palette-green-700: #5a8c5a;
+		--palette-green-800: #406340;
+		/* Warm neutrals — feels natural, earthy, not cold gray */
+		--palette-stone-50: #fafaf9;
+		--palette-stone-100: #f5f5f4;
+		--palette-stone-200: #e7e5e4;
+		--palette-stone-300: #d6d3d1;
+		--palette-stone-400: #a8a29e;
+		--palette-stone-500: #78716c;
+		--palette-stone-600: #57534e;
+		--palette-stone-700: #44403c;
+		--palette-stone-900: #1c1917;
+		/* Warm amber — for warnings, feels natural not alarming */
+		--palette-amber-50: #fffbeb;
+		--palette-amber-400: #fbbf24;
+		--palette-amber-500: #f59e0b;
+		--palette-amber-600: #d97706;
+		/* Red — for errors and destructive actions only */
+		--palette-red-50: #fef2f2;
+		--palette-red-500: #ef4444;
+		--palette-red-600: #dc2626;
+		--palette-red-700: #b91c1c;
+		/* Pure */
+		--palette-white: #fef9f9;
+		--palette-black: #0a0a0a;
+
+		/* ---- Semantic Tokens ---- */
+		/* Surfaces */
+		--color-bg: var(--palette-white);
+		--color-bg-subtle: var(--palette-stone-50); /* page backgrounds, sidebar */
+		--color-bg-muted: var(--palette-stone-100); /* disabled states, code blocks */
+	
+		/* Borders */
+		--color-border: var(--palette-stone-200);
+		--color-border-strong: var(--palette-stone-300);
+		--color-border-dark: var(--palette-stone-600);
+	
+		/* Text */
+		--color-text: var(--palette-stone-900); /* near black, not harsh pure black */
+		--color-text-muted: var(--palette-stone-500); /* timestamps, secondary labels */
+		--color-text-subtle: var(--palette-stone-400); /* placeholders, hints */
+		--color-text-inverse: var(--palette-white); /* text on dark/colored backgrounds */
+	
+		/* Primary — the green */
+		--color-primary: var(--palette-green-600);
+		--color-primary-hover: var(--palette-green-700);
+		--color-primary-subtle: var(--palette-green-50); /* selected row backgrounds etc */
+		--color-primary-muted: var(--palette-green-100); /* badges, tags */
+	
+		/* Danger */
+		--color-danger: var(--palette-red-600);
+		--color-danger-hover: var(--palette-red-700);
+		--color-danger-subtle: var(--palette-red-50);
+	
+		/* Success */
+		--color-success: var(--palette-green-500);
+		--color-success-subtle: var(--palette-green-50);
+	
+		/* Warning */
+		--color-warning: var(--palette-amber-600);
+		--color-warning-subtle: var(--palette-amber-50);
+}

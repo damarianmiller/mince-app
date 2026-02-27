@@ -1,0 +1,95 @@
+/* src/styles/globals.css */
+@import './tokens.css';
+
+/* ---- Box sizing ---- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition-duration: 300ms;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: 100%;
+}
+
+body {
+    
+    font-family: var(--font-theme);
+    font-size: var(--text-m);
+    font-weight: var(--font-normal);
+    line-height: var(--leading-normal);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: start;
+    gap: 0;
+    flex: 1;
+}
+
+
+/* ---- Typography reset ---- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/* ---- Media reset ---- */
+img,
+video,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* ---- Interactive reset ---- */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ---- List reset ---- */
+ul,
+ol {
+    list-style: none;
+}

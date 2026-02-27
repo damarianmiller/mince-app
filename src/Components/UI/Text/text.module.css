@@ -1,0 +1,46 @@
+/* src/components/ui/Text/Text.module.css */
+.text {
+  font-family: var(--font-sans);
+  line-height: var(--leading-normal);
+}
+
+/* ---- Size ---- */
+.xxs  { font-size: var(--text-xxs); }
+.xs   { font-size: var(--text-xs); }
+.s    { font-size: var(--text-s); }
+.m    { font-size: var(--text-m); }
+.l    { font-size: var(--text-l); }
+.xl   { font-size: var(--text-xl); }
+.xxl  { font-size: var(--text-xxl); }
+.xxxl { font-size: var(--text-xxxl); }
+
+/* ---- Weight ---- */
+.normal   { font-weight: var(--font-normal); }
+.medium   { font-weight: var(--font-medium); }
+.semibold { font-weight: var(--font-semibold); }
+.bold     { font-weight: var(--font-bold); }
+
+/* ---- Color ---- */
+.color-default { color: var(--color-text); }
+.color-muted   { color: var(--color-text-muted); }
+.color-subtle  { color: var(--color-text-subtle); }
+.color-primary { color: var(--color-primary); }
+.color-danger  { color: var(--color-danger); }
+.color-success { color: var(--color-success); }
+.color-warning { color: var(--color-warning); }
+.color-inverse { color: var(--color-text-inverse); }
+
+/* ---- Alignment ---- */
+.left   { text-align: left; }
+.center { text-align: center; }
+.right  { text-align: right; }
+
+/* ---- Truncate ---- */
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ---- Italic ---- */
+.italic { font-style: italic; }

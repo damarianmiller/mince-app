@@ -1,0 +1,8 @@
+.color-primary { color: var(--color-primary); }
+.color-secondary { color: var(--color-secondary); }
+.color-success { color: var(--color-success); }
+.color-danger { color: var(--color-danger); }
+.color-warning { color: var(--color-warning); }
+.color-light { color: var(--color-light); }
+.color-dark { color: var(--color-dark); }
+.color-current { color: currentColor; }

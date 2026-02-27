@@ -1,0 +1,27 @@
+.flex { display: flex; }
+
+.row { flex-direction: row; }
+.column { flex-direction: column; }
+.wrap { flex-wrap: wrap; }
+.nowrap { flex-wrap: nowrap;}
+
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: safe center; }
+.justify-end { justify-content: flex-end; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.justify-evenly { justify-content: space-evenly; }
+
+.align-start { align-items: start; }
+.align-center { align-items: center; }
+.align-end { align-items: end; }
+.align-stretch { align-items: stretch; }
+
+.spacing-none { gap: var(--space-none); }
+.spacing-xs { gap: var(--space-xs); }
+.spacing-s { gap: var(--space-s); }
+.spacing-m { gap: var(--space-m); }
+.spacing-l { gap: var(--space-l); }
+.spacing-xl { gap: var(--space-xl); }
+.spacing-xxl { gap: var(--space-xxl); }
+.spacing-xxxl { gap: var(--space-xxxl); }

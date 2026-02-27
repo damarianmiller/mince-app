@@ -1,0 +1,146 @@
+/* src/components/ui/Button/Button.module.css */
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+/* ---- Base ---- */
+.button {
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	gap: var(--space-xs);
+
+	border-radius: var(--radius-l);
+
+	font-family: var(--font-sans);
+	font-weight: var(--font-medium);
+	line-height: 1;
+	white-space: nowrap;
+	cursor: pointer;
+	text-decoration: none;
+
+
+	border-style: solid;
+	border-width: 2px;
+	border-color: transparent;
+
+	&:hover:not(:disabled) {
+		scale: 1.025;
+	}
+	&:active:not(:disabled) {
+		scale: 0.95;
+	}
+
+	.spinner {
+		animation: spin 1s linear infinite;
+	}
+	&.loading {
+		cursor: wait;
+		pointer-events: none;
+	}
+}
+
+.app-button:focus-visible {
+	outline: 2px solid var(--color-primary);
+	outline-offset: 1px;
+}
+
+/* ---- Variants ---- */
+.solid {
+	background-color: var(--color-primary);
+	color: var(--color-text-inverse);
+
+	border-color: var(--color-primary);
+	box-shadow: inset 0px 0px 2px #555;
+
+	&:hover:not(:disabled) {
+		background-color: var(--color-primary-hover);
+		border-color: var(--color-primary-hover);
+	}
+	&:active:not(:disabled) {
+		background-color: var(--color-primary);
+		border-color: var(--color-primary);
+	}
+}
+
+.outline {
+	background-color: transparent;
+	color: var(--color-primary);
+	border-color: var(--color-primary);
+
+	&:hover:not(:disabled) {
+		background-color: var(--color-primary-subtle);
+	}
+}
+
+
+
+.ghost {
+	background-color: transparent;
+	color: var(--color-text);
+	border-color: transparent;
+
+	&:hover:not(:disabled) {
+		background-color: var(--color-primary-subtle);
+	}
+}
+
+.destructive {
+	background-color: var(--color-danger);
+	color: var(--color-text-inverse);
+
+	border-color: var(--color-danger);
+	box-shadow: inset 0px 0px 2px #555;
+
+	&:hover:not(:disabled) {
+		background-color: var(--color-danger-hover);
+		border-color: var(--color-danger-hover);
+	}
+
+	&:active:not(:disabled) {
+		background-color: var(--color-danger);
+		border-color: var(--color-danger);
+	}
+}
+
+/* ---- Sizes ---- */
+/* padding: block inline, font-size */
+.xxs  { padding: var(--space-xxs) var(--space-xs);  font-size: var(--text-xxs); }
+.xs   { padding: var(--space-xs)  var(--space-s);   font-size: var(--text-xs); }
+.s    { padding: var(--space-xs)  var(--space-s);   font-size: var(--text-s); }
+.m    { padding: var(--space-s)   var(--space-m);   font-size: var(--text-m); }
+.l    { padding: var(--space-s)   var(--space-m);   font-size: var(--text-l); }
+.xl   { padding: var(--space-m)   var(--space-l);   font-size: var(--text-xl); }
+.xxl  { padding: var(--space-m)   var(--space-l);   font-size: var(--text-xxl); }
+.xxxl { padding: var(--space-l)   var(--space-xl);  font-size: var(--text-xxxl); }
+
+/* ---- Icon only — square aspect ratio ---- */
+.iconOnly.xxs  { padding: var(--space-xxs); }
+.iconOnly.xs   { padding: var(--space-xs); }
+.iconOnly.s    { padding: var(--space-xs); }
+.iconOnly.m    { padding: var(--space-s); }
+.iconOnly.l    { padding: var(--space-s); }
+.iconOnly.xl   { padding: var(--space-m); }
+.iconOnly.xxl  { padding: var(--space-m); }
+.iconOnly.xxxl { padding: var(--space-l); }
+
+/* ---- Full width ---- */
+.fullWidth {
+	width: 100%;
+}
+
+/* ---- Disabled ---- */
+.button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+
+/* ---- Loading ---- */
